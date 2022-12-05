@@ -31,8 +31,6 @@ public class DroneService implements IDroneService {
 
     @Override
     public ResponseEntity<Drone> registerDrone(Drone d) {
-        System.err.println(d);
-//        System.err.println("register drone by "+d.getId());
         boolean exists = dronerepo.exists(d.getId());
         if (exists) {
             return ResponseEntity.badRequest().build();

@@ -1,0 +1,17 @@
+com\musalasoft\config\SpringWebConfig.class
+com\musalasoft\drones\model\Drone$DroneBuilder.class
+com\musalasoft\drones\model\Model.class
+com\musalasoft\drones\service\IMedicationService.class
+com\musalasoft\drones\rest\RestDrone.class
+com\musalasoft\config\CustomMessage.class
+com\musalasoft\drones\task\Jobs.class
+com\musalasoft\drones\service\IDroneService.class
+com\musalasoft\drones\model\Drone.class
+com\musalasoft\drones\service\DroneService$1.class
+com\musalasoft\drones\service\DroneService.class
+com\musalasoft\drones\repository\MedicationRepository.class
+com\musalasoft\drones\service\MedicationService.class
+com\musalasoft\drones\repository\DroneRepository.class
+com\musalasoft\config\AppConstants.class
+com\musalasoft\config\PropertiesH2.class
+com\musalasoft\drones\model\Medication.class

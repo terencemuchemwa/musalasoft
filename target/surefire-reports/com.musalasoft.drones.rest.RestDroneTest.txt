@@ -1,4 +1,34 @@
 -------------------------------------------------------------------------------
 Test set: com.musalasoft.drones.rest.RestDroneTest
 -------------------------------------------------------------------------------
-Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 1.721 sec
+Tests run: 5, Failures: 0, Errors: 5, Skipped: 0, Time elapsed: 21.992 s <<< FAILURE! - in com.musalasoft.drones.rest.RestDroneTest
+registerDrone(com.musalasoft.drones.rest.RestDroneTest)  Time elapsed: 5.649 s  <<< ERROR!
+org.apache.http.conn.HttpHostConnectException: Connect to localhost:10080 [localhost/127.0.0.1, localhost/0:0:0:0:0:0:0:1] failed: Connection refused: connect
+	at com.musalasoft.drones.rest.RestDroneTest.registerDrone(RestDroneTest.java:62)
+Caused by: java.net.ConnectException: Connection refused: connect
+	at com.musalasoft.drones.rest.RestDroneTest.registerDrone(RestDroneTest.java:62)
+
+checkBatteryLevel(com.musalasoft.drones.rest.RestDroneTest)  Time elapsed: 4.042 s  <<< ERROR!
+org.apache.http.conn.HttpHostConnectException: Connect to localhost:10080 [localhost/127.0.0.1, localhost/0:0:0:0:0:0:0:1] failed: Connection refused: connect
+	at com.musalasoft.drones.rest.RestDroneTest.checkBatteryLevel(RestDroneTest.java:91)
+Caused by: java.net.ConnectException: Connection refused: connect
+	at com.musalasoft.drones.rest.RestDroneTest.checkBatteryLevel(RestDroneTest.java:91)
+
+listMedicationByDrone(com.musalasoft.drones.rest.RestDroneTest)  Time elapsed: 4.071 s  <<< ERROR!
+org.apache.http.conn.HttpHostConnectException: Connect to localhost:10080 [localhost/127.0.0.1, localhost/0:0:0:0:0:0:0:1] failed: Connection refused: connect
+	at com.musalasoft.drones.rest.RestDroneTest.listMedicationByDrone(RestDroneTest.java:101)
+Caused by: java.net.ConnectException: Connection refused: connect
+	at com.musalasoft.drones.rest.RestDroneTest.listMedicationByDrone(RestDroneTest.java:101)
+
+listavailable(com.musalasoft.drones.rest.RestDroneTest)  Time elapsed: 4.047 s  <<< ERROR!
+org.apache.http.conn.HttpHostConnectException: Connect to localhost:10080 [localhost/127.0.0.1, localhost/0:0:0:0:0:0:0:1] failed: Connection refused: connect
+	at com.musalasoft.drones.rest.RestDroneTest.listavailable(RestDroneTest.java:110)
+Caused by: java.net.ConnectException: Connection refused: connect
+	at com.musalasoft.drones.rest.RestDroneTest.listavailable(RestDroneTest.java:110)
+
+loadDrone(com.musalasoft.drones.rest.RestDroneTest)  Time elapsed: 4.065 s  <<< ERROR!
+org.apache.http.conn.HttpHostConnectException: Connect to localhost:10080 [localhost/127.0.0.1, localhost/0:0:0:0:0:0:0:1] failed: Connection refused: connect
+	at com.musalasoft.drones.rest.RestDroneTest.loadDrone(RestDroneTest.java:83)
+Caused by: java.net.ConnectException: Connection refused: connect
+	at com.musalasoft.drones.rest.RestDroneTest.loadDrone(RestDroneTest.java:83)
+

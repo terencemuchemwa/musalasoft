@@ -310,7 +310,7 @@
             </plugin>
         </plugins>-->
         <plugins>
-            <!--<plugin>
+            <plugin>
                 <artifactId>maven-surefire-plugin</artifactId>
                 <version>2.22.2</version>
                 <configuration>
@@ -319,7 +319,7 @@
                     </includes>
                     <testFailureIgnore>true</testFailureIgnore>
                 </configuration>
-            </plugin>-->
+            </plugin>
             <plugin>
                 <groupId>org.apache.maven.plugins</groupId>
                 <artifactId>maven-compiler-plugin</artifactId>
