@@ -14,6 +14,7 @@ import org.springframework.http.ResponseEntity;
  * @author user
  */
 public interface IDroneService {
+
     /**
      *
      * @param d
@@ -44,8 +45,7 @@ public interface IDroneService {
 
     /**
      *
-     * @return
-     * @message This method is for initializing drones
+     * @return @message This method is for initializing drones
      */
     ResponseEntity<List<Drone>> initialize();
 

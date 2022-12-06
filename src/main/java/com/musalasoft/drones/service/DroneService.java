@@ -23,7 +23,7 @@ import org.springframework.transaction.annotation.Transactional;
 @Transactional(readOnly = true)
 @Service("ServiceDrone")
 public class DroneService implements IDroneService {
-    
+
     @Autowired
     private DroneRepository dronerepo;
     @Autowired
@@ -87,18 +87,18 @@ public class DroneService implements IDroneService {
         List<Drone> listdrones = dronerepo.findAll();
         listdrones.forEach(d -> {
 //            if (null != d.getMedications()) {
-                if (d.getMedications().size() > 0) {
-                    List<Medication> lm =  d.getMedications(); 
-                    double mm = 0;
-                    if (lm.size() > 0) {
-                        mm = lm.stream().collect(Collectors.summingDouble(Medication::getWeight));
-                    }
-                    if (d.getWeightlimit() > mm) {
-                        listAvailable.add(d);
-                    }
-                } else {
+            if (d.getMedications().size() > 0) {
+                List<Medication> lm = d.getMedications();
+                double mm = 0;
+                if (lm.size() > 0) {
+                    mm = lm.stream().collect(Collectors.summingDouble(Medication::getWeight));
+                }
+                if (d.getWeightlimit() > mm) {
                     listAvailable.add(d);
                 }
+            } else {
+                listAvailable.add(d);
+            }
 //            } else {
 //                listAvailable.add(d);
 //            }
@@ -139,6 +139,6 @@ public class DroneService implements IDroneService {
 
     @Override
     public List<Drone> listAll() {
-     return  dronerepo.findAll() ;
+        return dronerepo.findAll();
     }
 }

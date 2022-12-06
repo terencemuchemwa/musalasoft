@@ -9,5 +9,5 @@ package com.musalasoft.drones.service;
  * @author user
  */
 public interface IMedicationService {
-    
+
 }

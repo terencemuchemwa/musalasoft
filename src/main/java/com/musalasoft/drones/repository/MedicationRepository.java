@@ -14,6 +14,6 @@ import org.springframework.stereotype.Repository;
  * @author user
  */
 @Repository
-public interface MedicationRepository  extends JpaRepository<Medication,Long>{
+public interface MedicationRepository extends JpaRepository<Medication, Long> {
 //    List<Medication> findByfkdrone(Long fkdrone);
 }

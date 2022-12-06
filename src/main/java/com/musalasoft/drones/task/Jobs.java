@@ -33,16 +33,17 @@ public class Jobs {
 
     @Async
     @Scheduled(fixedRateString = "${battery_level}")
-    public void checkbateryLevel() throws InterruptedException, IOException {Logger logger = Logger.getLogger("");
-    logger.setLevel(Level.INFO);//Loget Info, Warning dhe Severe do ruhen
-   FileHandler fileTxt = new FileHandler("c:/Logs/DroneLog.txt");
-   SimpleFormatter formatterTxt = new SimpleFormatter();
-    fileTxt.setFormatter(formatterTxt);
-    logger.addHandler(fileTxt);
+    public void checkbateryLevel() throws InterruptedException, IOException {
+        Logger logger = Logger.getLogger("");
+        logger.setLevel(Level.INFO);//Loget Info, Warning dhe Severe do ruhen
+        FileHandler fileTxt = new FileHandler("c:/Logs/DroneLog.txt");
+        SimpleFormatter formatterTxt = new SimpleFormatter();
+        fileTxt.setFormatter(formatterTxt);
+        logger.addHandler(fileTxt);
         List<Drone> ld = servicedrones.listAll();
         ld.forEach(drone -> {
             String log = "Drone " + drone.getSerialnumber() + " : battery level " + drone.getBatterycapacity();
-           logger.info(log);
+            logger.info(log);
         });
     }
 }

@@ -62,6 +62,7 @@ public class Medication implements Serializable {
     @JsonBackReference
 ////    @JsonIgnore
 
+    /* // */
 // @ManyToMany(mappedBy="roles")
 // @JsonBackReference
 //    @JsonIgnoreProperties(value = {"medications"})

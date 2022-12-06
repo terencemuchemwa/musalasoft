@@ -35,7 +35,6 @@ import org.springframework.test.context.jdbc.SqlConfig.TransactionMode;*/
  *
  * @author user
  */
-//@SpringBootTest
 @Sql(scripts ={"/data-h2.sql"}, 
   config = @SqlConfig(encoding = "utf-8", transactionMode = TransactionMode.ISOLATED))
 @ContextConfiguration(locations = {"classpath:spring-web-servlet.xml", "classpath:applicationContext.xml"})
@@ -53,8 +52,7 @@ public class RestDroneTest {
         StringEntity entity = new StringEntity(
                 JSON_STRING,
                 ContentType.APPLICATION_JSON);
-        System.err.println(JSON_STRING);
-        HttpPost pp = new HttpPost(PROJECT_URL + "/drones/register");
+          HttpPost pp = new HttpPost(PROJECT_URL + "/drones/register");
         pp.setEntity(entity);
     pp.setHeader("Accept", "application/json");
     pp.setHeader("Content-type", "application/json");

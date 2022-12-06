@@ -10,12 +10,13 @@ import javax.persistence.PersistenceContext;
 //import org.springframework.data.repository.CrudRepository;
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.stereotype.Repository;
+
 /**
  *
  * @author user
  */
 @Repository
-public interface DroneRepository extends JpaRepository<Drone,Long>{
+public interface DroneRepository extends JpaRepository<Drone, Long> {
 //    @PersistenceContext
 //  private EntityManager entityManager;
 }

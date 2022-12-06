@@ -4,7 +4,6 @@
  */
 package com.musalasoft.drones.service;
 
-
 public class MedicationService implements IMedicationService {
-    
+
 }

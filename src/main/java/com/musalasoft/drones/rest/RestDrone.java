@@ -38,7 +38,7 @@ public class RestDrone {
     }
 
     @PostMapping(value = "/register", consumes = "application/json")
-    public ResponseEntity<Drone> Register( @RequestBody Drone d) {
+    public ResponseEntity<Drone> Register(@RequestBody Drone d) {
         return servicedrone.registerDrone(d);
     }
 
@@ -65,7 +65,7 @@ public class RestDrone {
 
     @GetMapping("/initialize")
     public ResponseEntity<List<Drone>> listInitialize() {
-      return servicedrone.initialize();
+        return servicedrone.initialize();
 
     }
 
